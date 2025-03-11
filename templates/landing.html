@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Landing Page{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Welcome to My Flask App!</h1>
+    <p>This is a simple landing page.</p>
+    <a href="{{ url_for('login') }}" class="btn">Login</a>
+    <a href="{{ url_for('register') }}" class="btn">Register</a>
+</div>
+{% endblock %}
